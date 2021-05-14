@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Task</title>
+<style>
+    .product-img{
+        height: 220px;
+        width: 30%;
+        
+    }
+    
+    .product-price
+    {
+     margin-top: -100px;
+    }
+    .card
+    {
+      border:none!important;
+    }
+    .product-content:{
+        padding:20px;
+    }
+    .product-content: h5{
+        float: right;
+        bottom: 15px;
+        right: 15px;
+        position: absolute;
+        color: red;
+    }
+    .product-item{
+        transition:.6s;
+    }
+    .product-item:hover{
+        transform:(1.5);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(251,251,251,1) 33%, rgba(0,212,255,1) 100%);
+    }
+    
+    .padding-3{
+        padding: 3% !important;;
+    }
+    a{
+        color: black !important;
+    }
+    ul{
+        list-style-type: none;
+    }
+   
+    /* Stackoverflow preview fix, please ignore */
+    .navbar-nav {
+      flex-direction: row;
+    }
+    
+    .nav-link {
+      padding-right: .5rem !important;
+      padding-left: .5rem !important;
+    }
+    
+    /* Fixes dropdown menus placed on the right side */
+    .ml-auto .dropdown-menu {
+      left: auto !important;
+      right: 0px;
+    }
+    body{
+        background:white;
+    }
+    
+    .navbar-brand{
+        padding:0px;
+    }  
+</style>
+</head>
+<body>
+<section class="main-mav">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="./asstes/images/logo.PNG" alt="" ></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <br>
+              <a class="nav-link" href="#"><img src="./asstes/images/search.PNG" alt=""> SEARCH <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <br>
+              <a class="nav-link" href="#">SUPPORT</a>
+            </li>
+            <li class="nav-item">
+              &emsp; &emsp;<img src="./asstes/images/cart logo.PNG" height="20px" width="20px" />
+              <br>
+              <a class="nav-link" href="#">GIFT CARD</a>
+            </li>
+            <li class="nav-item">
+              Wish List
+              <br>
+              <a class="nav-link" href="#">LOGIN</a>
+            </li>
+          
+          </ul>
+          
+        </div>
+
+      </nav>
+<div style="height:3px; width:95%; background-color: red; margin-top: -11px; margin-left: 5%"></div>
+</section>
+
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                  <div class="card mt-3">
+                    <div class="card-header"><h4>Categories</h4></div>
+                    <div class="card-body" style="padding: 50px;">   
+                        <ul>
+                            <li>
+                                <div id="accordion">
+                                    <div class="card1">
+                                      <div class="card-header1" id="headingOne">
+                                        <h5 class="mb-0">
+                                        <span style="color:red; font-size: 25px; font-weight: bold;">|</span><a  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Skateboard
+                                          </a>
+                                        </h5>
+                                      </div>
+                                  
+                                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div class="card-body"  style="padding:5px 0px 10px 15px;">
+                                            <ul class="list-group">
+                                                <a href=""><li class="list-item sidemenu" style="color:#383333;">Decks</li></a> 
+                                                <a href=""><li class="list-item sidemenu" style="color:#383333;">Complete Skateboard</li></a>
+                                                <a href=""><li class="list-item sidemenu" style="color:#383333;">Build your Own</li></a> 
+                                                <a href=""><li class="list-item sidemenu" style="color:#383333;">Trucks</li></a></
+                                            </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </li>
+                            
+                            <br>
+                            <li><p  style="color: #968c8c; font-weight: bold;" class="mb-0">LONGBOARDS</p></li>
+                            
+                            <li><p style="color: #968c8c; font-weight: bold;"class="mb-0">ACCESSORIES</p></li>
+                            
+                            <li><p style="color: #968c8c; font-weight: bold;"class="mb-0">BRANDS</p></li>
+                           
+                        </ul>
+                         
+                    </div>
+                  <br><br><br>
+                     <a style="padding-left: 90px"  href="#"><h6 style="color: #968c8c;" >FILTERS ^</h6></a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="main-content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mt-3 shadow-sm">
+                                <div class="card-body padding-3"> 
+                                   <div class="product-item d-flex">
+                                       <img src="./asstes/images/skateboard1.jpg" class="product-img" alt="">
+                                       <div class="product-content">
+                                        
+                                           <h5 style="padding-left: 15px; color: #736868;">Almost Harley Quinn Complete Almost Harley Quinn Complete</h5>
+                                           
+                                          
+                                       </div>
+                                      
+                                   </div>
+                                    
+                                           
+                                          
+                                    <div class="product-price">
+                                      <h6 style="padding-left: 100px; color: #968c8c;">2.4 X 24</h6>
+                                      <br>
+                                               <h5 style="padding-left: 125px; color:red;"><b>$74.99</b></h5>
+                                           </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mt-3 shadow-sm">
+                                <div class="card-body padding-3">
+                                   <div class="product-item d-flex">
+                                       <img src="./asstes/images/skateboard2.png" class="product-img" alt="">
+                                       <div class="product-content">
+                                           <h5 style="padding-left: 15px; color: #736868;">Almost Harley Quinn Complete</h5>
+                                          
+                                           
+                                       </div>
+
+                                   </div>
+                                  
+                                   <div class="product-price">
+                                    <h6 style="padding-left: 100px; color: #968c8c;">2.4 X 24</h6>
+                                      <br>
+                                               <h5 style="padding-left: 125px; color:red;"><b>$123.00</b></h5>
+                                           </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="card mt-3 shadow-sm">
+                                <div class="card-body padding-3">
+                                   <div class="product-item d-flex">
+                                       <img src="./asstes/images/skateboard3.jpg" class="product-img" alt="">
+                                       <div class="product-content">
+                                           <h5 style="padding-left: 15px; color: #736868;">Almost Harley Quinn Complete</h5>
+                                           
+                                           
+                                       </div>
+                                   </div>
+                                   <div class="product-price">
+                                    <h6 style="padding-left: 100px; color: #968c8c;">2.4 X 24</h6>
+                                      <br>
+                                               <h5 style="padding-left: 125px; color:red;"><b>$64.99</b></h5>
+                                           </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mt-3 shadow-sm">
+                                <div class="card-body padding-3">
+                                   <div class="product-item d-flex">
+                                       <img src="./asstes/images/skateboard4.jpg" class="product-img" alt="">
+                                       <div class="product-content">
+                                           <h5 style="padding-left: 15px; color: #736868;">Almost Organic Complete</h5>
+                                           
+                                           
+                                       </div>
+                                   </div>
+                                   <div class="product-price">
+                                    <h6 style="padding-left: 100px; color: #968c8c;">2.4 X 24</h6>
+                                      <br>
+                                               <h5 style="padding-left: 125px; color:red;"><b>$69.99</b></h5>
+                                           </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mt-3 shadow-sm">
+                                <div class="card-body padding-3">
+                                   <div class="product-item d-flex">
+                                       <img src="./asstes/images/skateboard5.jpg" class="product-img" alt="">
+                                       <div class="product-content">
+                                          <h5 style="padding-left: 15px; color: #736868;">Almost Harley Quinn Complete</h5>
+                                           
+                                           
+                                       </div>
+                                   </div>
+                                   <div class="product-price">
+                                    <h6 style="padding-left: 100px; color: #968c8c;">2.4 X 24</h6>
+                                      <br>
+                                               <h5 style="padding-left:125px; color:red;"><b>$89.99</b></h5>
+                                           </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mt-3 shadow-sm">
+                                <div class="card-body padding-3">
+                                   <div class="product-item d-flex">
+                                       <img src="./asstes/images/skateboard6.png" class="product-img" alt="">
+                                       <div class="product-content">
+                                           <h5 style="padding-left: 15px; color: #736868;">Almost Harley Quinn Complete</h5>
+                                          
+                                          
+                                       </div>
+
+                                   </div>
+                                    <div class="product-price">
+                                      <h6 style="padding-left: 100px; color: #968c8c;">2.4 X 24</h6>
+                                      <br>
+                                               <h5 style="padding-left: 125px; color:red; "><b>$84.99</b></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
